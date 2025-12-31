@@ -35,12 +35,14 @@ services:
       DATABASE_URL: postgresql://urlshortener:password@db:5432/urlshortener
       PORT: 8080
       BASE_URL: http://app:8080
+    volumes:
+      - ./tests:/app/tests
     depends_on:
       db:
         condition: service_healthy
       app:
         condition: service_started
-    command: sh -c "sleep 5 && bun test tests/integration/*.test.ts"
+    command: sh -c "sleep 5 && bun test tests/integration/*.test.ts --update-snapshots"
     profiles:
       - test
 
