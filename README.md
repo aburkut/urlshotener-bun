@@ -1,6 +1,4 @@
-# URL Shortener (Bun)
-
-[![CI](https://github.com/aburkut/urlshotener-bun/actions/workflows/ci.yml/badge.svg)](https://github.com/aburkut/urlshotener-bun/actions/workflows/ci.yml)
+# URL Shortener (Bun) [![CI](https://github.com/aburkut/urlshotener-bun/actions/workflows/ci.yml/badge.svg)](https://github.com/aburkut/urlshotener-bun/actions/workflows/ci.yml)
 
 Fast and modern URL shortener built with Bun, Hono, and PostgreSQL.
 
